@@ -1,0 +1,33 @@
+
+    {  
+        "name": "Link Generator by Abhishek",  
+        "version": "1.0", 
+        "permissions": ["activeTab", "declarativeContent", "storage","contextMenus","clipboardRead","clipboardWrite"], 
+        "description": "Link Generator made for HFFC by Abhishek Gidde",  
+        "browser_action": {  
+          "default_popup": "popup.html",  
+          "default_icon": {  
+            "16": "images/origami.png",  
+            "32": "images/origami.png",  
+            "48": "images/origami.png",  
+            "128": "images/origami.png"  
+          }  
+        }, 
+        "background": {  
+    "scripts": ["back.js"]  
+  }, 
+  "content_scripts": [
+    {
+        "matches": ["*://*.homefirstindia.com/*"],
+        "js": ["back.js"]
+    }
+],
+        "icons": {  
+          "16": "images/origami.png",  
+          "32": "images/origami.png",  
+          "48": "images/origami.png",  
+          "128": "images/origami.png"  
+        },  
+        "manifest_version":   2
+      }  
+      
